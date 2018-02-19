@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33691E</color>
+    <color name="colorPrimaryDark">#22491b</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- color of the fouls and free kick text views  -->
+    <color name="colorFF">#FFECB3</color>
+    <color name="head">#FF6F00</color>
+
+    <color name="scoreColor">#ffff</color>
+    <color name="backGroundTextViewColor">#126</color>
+</resources>

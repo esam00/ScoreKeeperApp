@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+
+
+    <string name="TeamA">Team A </string>
+    <string name="TeamB">Team B </string>
+    <string name="TeamA_Score">0 </string>
+    <string name="TeamB_Score">0 </string>
+    <string name="goal">Goal</string>
+    <string name="foul">Fouls</string>
+    <string name="free_kick">Free Kicks</string>
+    <string name="Add">+</string>
+    <string name="sub">-</string>
+    <string name="teamA_fouls">0</string>
+    <string name="teamB_fouls">0</string>
+    <string name="teamA_free">0</string>
+    <string name="teamB_free">0</string>
+    <string name="reset">Reset</string>
+</resources>

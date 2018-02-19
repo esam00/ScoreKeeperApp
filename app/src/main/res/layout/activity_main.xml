@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/stad"
+    tools:context="com.example.android.scorekeeperapp.MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        tools:context="com.udacity.myapplication.MainActivity">
+
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/teamPadding"
+                    android:text="@string/TeamA"
+                    android:textColor="@color/head"
+                    android:textSize="@dimen/teamNameTextSize"
+                    />
+
+
+                <TextView
+
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TeamA_Score"
+                    android:textColor="@color/scoreColor"
+                    android:textSize="@dimen/scoreTextSize"
+                    android:textStyle="italic"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/goalButtonMargin"
+                    android:onClick="goalA"
+                    android:text="@string/goal"
+                    android:textSize="@dimen/buttonTextSize"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foul"
+                    android:textColor="@color/colorFF"
+                    android:textSize="@dimen/subtitleTextSize"
+                    android:textStyle="italic"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="decreaseFoulForTeamA"
+                        android:text="@string/sub"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/team_a_fouls"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:background="@color/backGroundTextViewColor"
+                        android:text="@string/teamA_fouls"
+                        android:textColor="@color/head"
+                        android:textSize="@dimen/foulsTextSize"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="increaseFoulForTeamA"
+                        android:text="@string/Add"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/free_kick"
+                    android:textColor="@color/colorFF"
+                    android:textSize="@dimen/subtitleTextSize"
+                    android:textStyle="italic"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="decreaseFreeKickForTeamA"
+                        android:text="@string/sub"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/team_a_free_kick"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:background="@color/backGroundTextViewColor"
+                        android:text="@string/teamA_free"
+                        android:textColor="@color/head"
+                        android:textSize="@dimen/foulsTextSize"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="increaseFreeKickForTeamA"
+                        android:text="@string/Add"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/teamPadding"
+                    android:text="@string/TeamB"
+                    android:textColor="@color/head"
+                    android:textSize="@dimen/teamNameTextSize"
+                    />
+
+
+                <TextView
+
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TeamB_Score"
+                    android:textColor="@color/scoreColor"
+                    android:textSize="@dimen/scoreTextSize"
+                    android:textStyle="italic"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/goalButtonMargin"
+                    android:onClick="goalB"
+                    android:text="@string/goal"
+                    android:textSize="@dimen/buttonTextSize"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foul"
+                    android:textColor="@color/colorFF"
+                    android:textSize="@dimen/subtitleTextSize"
+                    android:textStyle="italic"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="decreaseFoulForTeamB"
+                        android:text="@string/sub"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/team_b_fouls"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:background="@color/backGroundTextViewColor"
+                        android:text="@string/teamB_fouls"
+                        android:textColor="@color/head"
+                        android:textSize="@dimen/foulsTextSize"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="increaseFoulForTeamB"
+                        android:text="@string/Add"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/free_kick"
+                    android:textColor="@color/colorFF"
+                    android:textSize="@dimen/subtitleTextSize"
+                    android:textStyle="italic"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="decreaseFreeKickForTeamB"
+                        android:text="@string/sub"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/team_b_free_kicks"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:background="@color/backGroundTextViewColor"
+                        android:text="@string/teamB_free"
+                        android:textColor="@color/head"
+                        android:textSize="@dimen/foulsTextSize"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/add_subButtonMargin"
+                        android:layout_weight="1"
+                        android:onClick="increaseFreeKickForTeamB"
+                        android:text="@string/Add"
+                        android:textSize="@dimen/buttonTextSize"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/container"
+            android:onClick="reset"
+            android:text="@string/reset"
+            android:textSize="@dimen/buttonTextSize"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
